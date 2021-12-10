@@ -37,6 +37,12 @@ const BNB: Currency = {
   decimals: 18,
 }
 
+const METIS: Currency = {
+  name: 'Metis',
+  symbol: 'METIS',
+  decimals: 18,
+}
+
 const CHAIN_INFORMATION = new Map<number, ChainInformation | ChainType>([
   [
     1,
@@ -239,6 +245,18 @@ const CHAIN_INFORMATION = new Map<number, ChainInformation | ChainType>([
       shortName: 'Arbitrum',
       explorerUrl: 'https://arbiscan.io/',
       testnet: false,
+    },
+  ],
+  [
+    588,
+    {
+      id: 588,
+      nativeCurrency: METIS,
+      type: 'stardust',
+      fullName: 'Metis Stardust Testnet',
+      shortName: 'Stardust',
+      explorerUrl: 'https://stardust-explorer.metis.io/',
+      testnet: true,
     },
   ],
   [
